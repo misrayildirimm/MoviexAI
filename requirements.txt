@@ -1,0 +1,12 @@
+streamlit
+pandas
+numpy
+plotly
+requests
+bs4
+scikit-learn
+openpyxl
+joblib
+matplotlib
+seaborn
+preprocessing
