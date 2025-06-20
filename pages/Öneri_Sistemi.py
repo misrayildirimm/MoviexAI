@@ -566,22 +566,14 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
     st.markdown('<label class="filter-group-label">🎬 Film Seçin:</label>', unsafe_allow_html=True)
+    # Film seçimi
     valid_titles = df['title'].dropna().apply(lambda x: x.strip()).loc[lambda x: x != ""]
-    
-    all_movies = sorted(valid_titles.unique()) # Tüm filmlerin sıralı listesi
-    
-    # "The Matrix" filminin listedeki indeksini bul
-    try:
-        default_index = all_movies.index("The Matrix")
-    except ValueError:
-        default_index = 0 # Eğer "The Matrix" bulunamazsa ilk filmi seç
-        
     movie_title = st.selectbox(
-        "Film Seçin:",
-        all_movies,
-        index=default_index, # Belirlediğiniz indeksi kullan
+        "Film Seçin:",  # Bu label'ı CSS ile gizleyeceğiz, kendi label'ımızı kullanıyoruz
+        sorted(valid_titles.unique()),
+        index=0,
         help="Öneri almak istediğiniz filmi seçin",
-        key="movie_selector"
+        key="movie_selector"  # Unique key eklendi
     )
 
 with col2:
