@@ -61,6 +61,9 @@ Eğer bu sistem içerik tabanlı bir öneri sistemiyse, kullanıcı geçmişi de
 
 Bu iki teknolojinin birleşimiyle, projemiz geleneksel anahtar kelime eşleştirmelerinden öteye geçerek filmlerin içeriksel derinliğini anlayan ve daha akıllı, kişiselleştirilmiş öneriler sunan bir sistem geliştirmektedir.
 
+# Streamlit Link
+Link: https://moviexai-movie-recommendation-system.streamlit.app/
+
 
 ## 👥 Ekip İletişim Bilgileri
 
