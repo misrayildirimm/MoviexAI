@@ -573,8 +573,8 @@ with col1:
         sorted(valid_titles.unique()),
         index=0,
         help="Öneri almak istediğiniz filmi seçin",
-        key="movie_selector"  # Unique key eklendi
-    )
+        key="movie_selector"  # Unique key eklendi
+    )
 
 with col2:
     st.markdown('<label class="filter-group-label">🎭 Tür Filtresi:</label>', unsafe_allow_html=True)
