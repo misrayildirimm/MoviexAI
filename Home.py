@@ -323,7 +323,7 @@ with col2:
 
 with col3:
     if st.button("🎥 Film Öneri Sistemi", key="btn3", help="Benzer filmler için öneriler alın."):
-        st.switch_page("pages/Öneri_Sistemi.pyy")
+        st.switch_page("pages/Öneri_Sistemi.py")
 
 st.markdown('</div>', unsafe_allow_html=True)
 
