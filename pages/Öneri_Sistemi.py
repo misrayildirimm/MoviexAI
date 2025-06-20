@@ -571,7 +571,7 @@ with col1:
     movie_title = st.selectbox(
         "Film Seçin:",  # Bu label'ı CSS ile gizleyeceğiz, kendi label'ımızı kullanıyoruz
         sorted(valid_titles.unique()),
-        index=0,
+        index=1,
         help="Öneri almak istediğiniz filmi seçin",
         key="movie_selector"  # Unique key eklendi
     )
